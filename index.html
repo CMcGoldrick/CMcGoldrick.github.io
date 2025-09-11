@@ -1,161 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
+    <title>Ciaran Francis McGoldrick | Web Developer</title>
+    <!-- <link rel="icon" href="images/favicon-btc.ico" type="image/x-icon"/> -->
+    <link rel="icon" href="images/favicon-c.ico" type="image/x-icon"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <title>Ciaran McGoldrick</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/slider/reset.css">  
+    <link rel="stylesheet" href="css/slider/reset.css">  
+    <link rel="stylesheet" href="css/slider/style.css">  
+    <script src="js/slider/modernizr.js"></script> 
 
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-    <!-- <link href="css/grayscale.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159114384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-159114384-1');
+    </script>
 
   </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
 
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
- <!--        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-    </nav>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div style="display:none" class="site-logo"><a href="index.html">C.F.</a></div>
+          <div>
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#video_box" class="nav-link">Home</a></li>
+                <li><a href="#home-section" class="nav-link">Me</a></li>
+                <li><a href="#work-section" class="nav-link">Work</a></li>
+                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                <!-- <li><a href="process.html" class="nav-link">Process</a></li> -->
+                <li onclick="goToUrl('articles.html')"><a href="articles.html" class="nav-link">Articles</a></li>
+                <li onclick="goToUrl('crypto.html')"><a href="crypto.html" class="nav-link">Pay with Bitcoin</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block">
+                <li class="cta"><a href="#contact-section" class="nav-link"><span class="rounded border border-primary">Contact</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+      
+    </header>
 
+    <div id="video_box">
+      <div id="video_overlays" style="display: none;">
+        <div class="page-scroll text-center">
+          <a id="video-link-button" href="#home-section" class="btn btn-circle">
+              <i class="fa fa-angle-down fa-2x animated"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <video id="desktop-video" muted autoplay playsinline loop>
+          <source src="main_bg.mp4" type="video/mp4">
+        </video>
+        <!-- <video id="mobile-video" style="display: none;" muted autoplay playsinline loop>
+          <source src="main_bg_m.mp4" type="video/mp4">
+        </video> -->
+      </div>
+    </div>
 
+    <div class="intro-section" id="home-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 m-auto" data-aos="fade-up">
+            <h1 class="home-title">Ciar&#225;n Francis McGoldrick</h1>
+            <p>&#10149; Software Development</p>
+            <hr class="breakline home-bar"> 
+            <table>
+              <tr>
+                <td class="intro-td">Azure DevOps</td>
+                <td class="intro-td">ASP.NET API</td>
+                <td class="intro-td">HTML5</td>
+              </tr>
+              <tr>
+                <td class="intro-td">Azure CLI</td>
+                <td class="intro-td">PostgreSQL</td>
+                <td class="intro-td">Javascript</td>
+              </tr>
+              <tr>
+                <td class="intro-td">ASP.NET MVC</td>
+                <td class="intro-td">SQL Server</td>
+                <td class="intro-td">CSS3</td>
+              </tr>
+            </table>
+            <!-- <p>Azure DevOps</p>
+            <p>ASP.NET MVC</p>
+            <p>ASP.NET Core</p>
+            <p>SQL</p>
+            <p>JavaScript</p> -->
+            <hr class="breakline home-bar">
+            <div class="social-links">
+              <a href="https://github.com/CMcGoldrick" target="_blank"><i id="social-icon" class="fab fa-github-square"></i></a>
+              <a href="https://www.linkedin.com/in/ciaran-mcgoldrick/" target="_blank"><i id="social-icon" class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/CiaranMcGold" target="_blank"><i id="social-icon" class="fab fa-twitter-square"></i></a>
+              <a href="https://medium.com/@ciaran_mcgoldrick" target="_blank"><i id="social-icon" class="fab fa-medium"></i></a>
+            </div>
+            <div><a href="#contact-section" class="btn btn-outline-light py-3 px-5 get-started-btn nav-link">Get A Consulation</a></div>
+            
+            <!-- <div style="position: relative;" class="image-absolute-box">
+              <div style="background-color:#21e742;" class="box" data-aos="fade-up">
+                <i class="fas fa-user-check"></i><img style="height:50px" src="images/upwork_400x400.png" alt="Image"
+                  class="img-fluid">
+                <h3>100% job success on Upwork</h3>
+              </div>
+            </div>
+           -->
+          </div>
+          <div class="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
+            <figure class="img-absolute">
+              <img class="profile-img" src="images/ciaran-profile-2021-v2.jpeg" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-    <!-- Intro Header -->
-    <header class="masthead">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 mx-auto">
-              <h1 class="brand-heading">Ciaran McGoldrick</h1>
-              <p class="intro-text">Compelling web development and design.</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
+    <div class="site-section section-2 bg-light" id="work-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">My Work</h2>
+            <p style="text-align: center;color: #000;padding-bottom: 20px;font-size: 20px;">I <span style="font-style:italic; font-weight:700; color:#007bff">design</span>, <span
+              style="font-style:italic; font-weight:700; color:#007bff">develop</span> and <span
+              style="font-style:italic; font-weight:700; color:#007bff">deploy</span> Web and Blockchain applications for personal and business purpose.
+            </p>
+            <div id="work-card">
+              <p class="work-paragraph">Projects to which I have contributed - These are mainly hosted in CMS systems like wordpress and Joomla. For any inquiries about details on large scale projects with Microsoft technologies or specifics on code usage, feel free to <a href="#contact-section" style="color:#007bff">Contact</a> me.</p>
             </div>
           </div>
         </div>
       </div>
-    </header>
+        
+        <div class="container" id="work">
+          <div id="work-card">
+            <a class="work-thumb" href="https://inparadiserentals.com/" target="_blank">
+              <div class="work-text">
+                <h3>In Paradise Rentals</h3>
+                <span class="category">Vacation Rentals</span>
+              </div>
+              <img src="images/work/in-paradise-rentals.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+          
+          <div id="work-card">
+            <a class="work-thumb" href="https://www.firstroanoke.com/" target="_blank">
+              <div class="work-text">
+                <h3>First Roanoke</h3>
+                <span class="category">Religion</span>
+              </div>
+              <img src="images/work/first-roanoke.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+          
+          <div id="work-card">
+            <a class="work-thumb" href="http://sympol.herokuapp.com/" target="_blank">
+              <div class="work-text">
+                <h3>Sympol</h3>
+                <span class="category">Ancient Symbols</span>
+              </div>
+              <img src="images/work/sympol.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+          
+          <div id="work-card">
+            <a class="work-thumb" href="http://www.prime-time-picks.com/" target="_blank">
+              <div class="work-text">
+                <h3>Prime Time Picks</h3>
+                <span class="category">Sports Betting - Picks, Articles and Odds </span>
+              </div>
+              <img src="images/work/prime-time-picks.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+              
+          <div id="work-card">
+            <a class="work-thumb" href="https://composerschoir.net/" target="_blank">
+              <div class="work-text">
+                <h3>Composers Choir</h3>
+                <span class="category">Music</span>
+              </div>
+              <img src="images/work/composers-choir.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
 
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
+          <div id="work-card">
+            <a class="work-thumb" href="https://jordanvouga.com/" target="_blank">
+              <div class="work-text">
+                <h3>Jordan Vouga</h3>
+                <span class="category">Art Exhibition</span>
+              </div>
+              <img src="images/work/jordan-vouga.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+
+          <div id="work-card">
+            <a class="work-thumb" href="http://pixquanta.com/" target="_blank">
+              <div class="work-text">
+                <h3>PixQuanta</h3>
+                <span class="category">Lidar Technology</span>
+              </div>
+              <img src="images/work/pixquanta.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+
+          <div id="work-card">
+            <a class="work-thumb" href="https://www.trustwave.com/en-us/" target="_blank">
+              <div class="work-text">
+                <h3>Trustwave</h3>
+                <span class="category">Cyber Security</span>
+              </div>
+              <img src="images/work/trustwave.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+
+          <div id="work-card">
+            <a class="work-thumb" href="https://www.oddsshopper.com/" target="_blank">
+              <div class="work-text">
+                <h3>OddsShopper</h3>
+                <span class="category">Sports Betting</span>
+              </div>
+              <img src="images/work/oddsshopper.png" alt="Image" class="img-fluid work-img">
+            </a>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About</h2>
-            <p> I have a passion for anything related to web development and design.</p>
-            <p>Specialistion in Ruby on Rails and Vue.js </p>
+          <div class="col-lg-12">
+              <hr id="testimonials-section">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">Testimonials</h2>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Download Section -->
-    <section id="portfolio" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Portfolio</h2>
-          <p>Check out my project portfolio! </p>
-          <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
-        </div>
+      <div class="cd-testimonials-wrapper cd-container">
+          <ul class="cd-testimonials">
+            <li>
+              <p class="testimonial-content">C. McGoldrick completed the work in a timely fashion with superb communication and professional demeanor. I highly
+                  recommend working with him. He is easy to work with, communicates well, and does a terrific job. He goes above and
+                  beyond to make sure the customer is satisfied with the work. Thank you, Ciaran!</p>
+              <div class="cd-author">
+                <i class="fas fa-female"></i>&nbsp;&nbsp;&nbsp;
+                <ul class="cd-author-info">
+                  <li>
+                    <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
+                      Janice L. Blake
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+        
+            <li>
+              <p class="testimonial-content">While the project ended up taking much longer than anticipated, he regularly communicated updates and went above and
+                  beyond to troubleshoot that many unexpected challenges that arose. I was incredibly please by his work ethic - something
+                  that's not easy to find these days. I would highly recommend this freelancer and am already looking for other
+                  opportunities to utilize him!</p>
+              <div class="cd-author">
+                <i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;
+                <ul class="cd-author-info">
+                  <li>
+                    <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
+                      Tyler Harden
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li>
+              <p class="testimonial-content">Ciaran always does good work and did his best on this job as well. Will use again on other projects!</p>
+              <div class="cd-author">
+                <i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;
+                <ul class="cd-author-info">
+                  <li>
+                    <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
+                      Nick Hunt
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+           
+            <li>
+              <p class="testimonial-content">Ciaran did a fabulous job on my website in a timely manner and was very easy to work with and went above and beyond the
+                  call of duty working on my site. He went the extra mile and suggested edits I didn't even knew existed. Thumbs Up for a
+                  superb job!</p>
+              <div class="cd-author">
+                <i class="fas fa-female"></i>&nbsp;&nbsp;&nbsp;
+                <ul class="cd-author-info">
+                  <li>
+                    <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
+                      Janice L. Blake
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li>
+              <p class="testimonial-content">In working with Ciarán during Actualize, I have found him to have all the attributes that make for a successful software
+                  developer. He learns quickly, loves his craft, is personable, and has great communication skills. In particular, his
+                  excitement to tackle new and tough problems is infectious. He'd be an invaluable asset to any development team!</p>
+              <div class="cd-author">
+                <i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;
+                <ul class="cd-author-info">
+                  <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/ciaran-mcgoldrick/" class="testimonial-link">
+                      Jay Wengrow
+                    </a>
+                </ul>
+              </div>
+            </li>
+            
+          </ul> <!-- cd-testimonials -->
+        </div> <!-- cd-testimonials-wrapper -->
+        
       </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
+
+    <div class="site-section" id="contact-section">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact</h2>
-            <p>Looking to start a web project? </p>
-            <p>Feel free to connect with me for any questions.</p>
 
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <!-- <i class="fa fa-twitter fa-fw"></i> -->
-                   <i class="fab fa-linkedin"></i>
-                  <span class="network-name">LinkedIn</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/CMcGoldrick" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
-                  <img src="" alt="">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Medium</span>
-                </a>
-              </li>
-            </ul>
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            
+            <h2 class="section-title">Get a Consultation</h2>
+            <!-- google mailer -->
+            <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server  -->
+            
+            <div class="container-contact100">
+
+                <div class="wrap-contact100">
+                  <form onclick="clearThanks()" class="contact100-form validate-form gform" id="mailform">
+                    <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                      <input id="mailname" class="input100" type="text" name="name" placeholder="Full Name">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
+                      <input id="mailemail" class="input100" type="text" name="email" placeholder="E-mail">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
+                      <input id="mailphone" class="input100" type="text" name="phone" placeholder="Phone">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+                      <textarea id="mailmessage" class="input100" name="message" placeholder="Your Message"></textarea>
+                      <span class="focus-input100"></span>
+                    </div>                   
+                  </form>
+                  
+                  <button onclick="sendMail()" class="cta sendmailbtn"><a class="nav-link"><span
+                    class="rounded border border-primary"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send</span></a>
+                  </button>   
+                  <div id="send-spinner" style="display: none;"></div>  
+                  <div id="thank-you"></div>
+                  
+                </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <i class="fab fa-linkedin"></i>
-
-    <!-- Map Section -->
-    <div id="map"></div>
-
-    <!-- Footer -->
     <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Ciaran Francis McGoldrick</p>
-      </div>
+        <p>Computers, Philosophy, Liberty <img style="height:25px" src="images/favicon-btc-32x32.png"></p>
+      <p>
+        Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+      </p>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </div> <!-- .site-wrap -->
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<!--     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
- -->
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="js/skills.js"></script>
 
-  </body>
+  <script src="js/slider/jquery-2.1.1.js"></script>
+  <script src="js/slider/masonry.pkgd.min.js"></script>
+  <script src="js/slider/jquery.flexslider-min.js"></script>
+  <script src="js/slider/main.js"></script> 
 
+  <style>
+    #send-spinner,
+    #send-spinner:before,
+    #send-spinner:after {
+      background: #007bff;
+      -webkit-animation: load1 1s infinite ease-in-out;
+      animation: load1 1s infinite ease-in-out;
+      width: 1em;
+      height: 4em;
+    }
+    #send-spinner {
+      color: #007bff;
+      text-indent: -9999em;
+      margin: 44px auto;
+      position: relative;
+      font-size: 11px;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+    #send-spinner:before,
+    #send-spinner:after {
+      position: absolute;
+      top: 0;
+      content: '';
+    }
+    #send-spinner:before {
+      left: -1.5em;
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    #send-spinner:after {
+      left: 1.5em;
+    }
+    @-webkit-keyframes load1 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 0;
+        height: 4em;
+      }
+      40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+      }
+    }
+    @keyframes load1 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 0;
+        height: 4em;
+      }
+      40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+      }
+    }
+  </style>
+
+  <script>
+    $('#video_overlays').delay(17900).fadeIn(2000);
+
+    function sendMail(){
+      var thanks = $("#thank-you");
+      $("#send-spinner").css("display", "block");
+
+      var nameEntry = document.getElementById("mailname").value;
+      var emailEntry = document.getElementById("mailemail").value;
+      var phoneEntry = document.getElementById("mailphone").value;
+      var messageEntry = document.getElementById("mailmessage").value;
+
+      if(nameEntry == "" || emailEntry == "" || phoneEntry == "" || messageEntry == "")
+      {
+        $("#send-spinner").css("display", "none");
+        var stringArray = [];
+        
+        if(nameEntry == ""){stringArray.push("Name")};
+        if(emailEntry == ""){stringArray.push("E-mail")};
+        if(phoneEntry == ""){stringArray.push("Phone Number")};
+        if(messageEntry == ""){stringArray.push("Message")};
+        
+        switch(stringArray.length)
+        {
+          case 1:
+            thanks.text(`Missing ${stringArray[0]}`);
+            break;
+          case 2:
+            thanks.text(`Missing ${stringArray[0]} and ${stringArray[1]}`);
+            break;
+          case 3:
+            thanks.text(`Missing ${stringArray[0]}, ${stringArray[1]} and ${stringArray[2]}`);
+            break;
+          case 4:
+            thanks.text(`Missing ${stringArray[0]}, ${stringArray[1]}, ${stringArray[2]} and ${stringArray[3]}`);
+            break;
+        }
+      }
+      else
+      {
+        $.ajax({
+          type: "POST",
+          url: "https://script.google.com/macros/s/AKfycbyXMra2Zd6IRVC7qbxT7JX03kJ6RgCDEc-OrYc/exec",
+          data: {
+            name: nameEntry,
+            email: emailEntry,
+            phone: phoneEntry,
+            message: messageEntry
+          },
+          success: function(data) {
+            var idArray = ["mailname", "mailemail", "mailphone", "mailmessage"];
+            for (var i = 0; i < idArray.length; i++)
+            {
+              document.getElementById(idArray[i]).value = "";
+            }
+            $("#send-spinner").css("display", "none");
+
+            thanks.text("Thank you for your inquiry, I will be in touch with you shortly")
+          } 
+        })
+      }
+
+    }
+    
+    function clearThanks()
+    {
+      var thanks = $("#thank-you");
+      thanks.html("");
+    }
+  </script>
+ 
+</body>
 </html>
+
+
+
